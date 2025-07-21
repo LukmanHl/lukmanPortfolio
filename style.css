@@ -2,33 +2,34 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
 
 body{
     width: 100%;
+    background-color: #232322;
 }
 
 h1{
     font-size: 50px;
     line-height: 64px;
-    color: #3A0519;
+    color: white;
 }
 
 h2{
     font-size: 45px;
     line-height: 54px;
-    color: #3A0519;
+    color: white;
 }
 
 h4{
     font-size: 20px;
-    color: #3A0519;
+    color: white;
 }
 
 p{
     font-size: 16px;
-    color: #3A0519;
+    color: white;
     margin: 15px 0 20px 0;
 }
 
@@ -44,7 +45,7 @@ button.normal{
     font-size: 14px;
     font-weight: 600;
     padding: 15px 30px;
-    color: black;
+    color: rgb(36, 193, 255);
     background-color: white;
     border-radius: 4px;
     cursor: pointer;
@@ -68,19 +69,41 @@ button.white{
 
 
 #header{
-   display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px 80px ;
-    background-color: #3A0519;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    padding: 20px 0 20px 0;
+    background-color: #232322;
+    box-shadow: 0 5px 15px rgb(245, 226, 192, 0.3);
     z-index: 999;
     position: sticky;
     top: 0;
-    left: 0;
 }
 
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;
+    /* z-index: 999; */
+    position: sticky;
+    margin-left: 50px;
+    
+}
+
+.container .brand-logo a{
+  text-decoration: none;
+  font-size: 33px;
+  font-weight: 500;
+  color: white;
+  text-align: center;
+}
+
+#header .container span{
+  color: rgb(36, 193, 255);
+
+}
+
+
 #header h1{
+  text-decoration: none;
   color: white;
 }
 
@@ -97,14 +120,21 @@ button.white{
 }
 
 #navbar li a{
+  border-radius: 4px;
+  padding: 8px 16px 8px 16px;
   text-decoration: none;
   color: white;
-  font-weight: 600;
+  font-weight: 500;
 }
 
-#navbar li:hover{
-  color: #f0f0f0;
+#navbar li a:hover{
+  color: rgb(36, 193, 255);
+  background-color: transparent;
   cursor: pointer;
+}
+
+#navbar li a.active{
+  color: rgb(36, 193, 255);
 }
 
 #mobile{
@@ -117,20 +147,16 @@ button.white{
 }
 
 #hero{
-  background-image: url("images/vackground-com-hDQ-dUjQN8E-unsplash.jpg");
-  height: 70vh;
-  width: 100%;
-  background-size: cover;
   margin-top: 40px;
 }
 
 #hero h2{
   font-size: 29px;
-  color: #3A0519;
+  color: white;
 }
 
 #hero p{
-  color: #3A0519;
+  color: white;
   line-height: 25px;
 }
 
@@ -144,8 +170,7 @@ button.white{
   }
 
 .desc .photo{
-  border: 1px solid #3A0519;
-  border-radius: 8px;
+ 
   height: auto;
   width: 20%;
 }
@@ -154,12 +179,12 @@ button.white{
   margin-top: 35px;
   justify-content: center;
   text-align: center;
-  color: #3A0519;
+  color: white;
 }
 
 #hero img{
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
+  opacity: 0.8;
+  border-radius: 50%;
   justify-content: center;
   align-items: center;
   height: 250px;
@@ -167,70 +192,82 @@ button.white{
 }
 
 #hero button{
-  color: #3A0519;
-  border: 1px solid #3A0519;
+  color: white;
+  border: 1px solid #232322;
+  background-color: rgb(36, 193, 255);
   margin-top: 30px;
   margin-right: 15px;
+  font-size: 12px;
 }
 
 #hero button:hover{
-  background-color: #3A0519;
+  background-color: #232322;
   color: white;
   border: 1px solid white;
   transform: 2s;
 }
 
-marquee{
-  margin-top: 50px;
-}
-
-
 #features{
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
   cursor: pointer;
 }
 
 #features h3{
-  color: #3A0519;
+  margin-top: 30px;
+  color: white;
   text-align: center;
-  font-weight: 600;
-  font-size: 23px;
+  font-weight: 500;
+  font-size: 18px;
   margin-bottom: 30px;
 }
 
 #features div{
+  width: 100%;
   display: flex;
   justify-content: center;
-  margin-right: 30px;
+  margin: 20px 0 20px 0;
   align-items: center;
 }
 
 #features div .feat img{
-  justify-content: center;
-  align-items: center;
-  margin: 0 80px;
+  margin: 0 10px;
   margin-bottom: 10px;
 }
 
+.feat .euone button{
+  border: 1px solid #232322;
+  background-color: #232322;
+  color: white;
+  font-size: 12px;
+  font-weight: 500;
+  justify-content: space-between;
+  padding: 8px;
+  margin-right: 15px;
+
+}
+
 #features div .feat h6{
-  font-size: 18px;
-  font-weight: 600;
-  color: #3A0519;
+  font-size: 15px;
+  font-weight: 500;
+  color: #232322;
+}
+
+#features div .feat div{
+  
+
 }
 
 #features div .feat{
   display: inline-block;
-  border: 1px solid #3A0519;
+  background-color: white;
   border-radius: 4px;
-  padding: 30px 60px 30px 60px;
-  box-shadow: 10px 10px 24px #977c86;
+  padding: 20px 40px 20px 40px;
+  margin-left: 40px;
+  box-shadow: 10px 10px 24px rgba(239, 246, 248, 0.1);
   transition: width 1s, height 1s, transform 1s;
 }
 
 #features div .feat:hover{
-  box-shadow: 10px 10px 54px #977c86;
+  box-shadow: 10px 10px 54px rgba(215, 234, 241, 0.1);
   transform: scale(1.05);
     
 }
@@ -240,7 +277,7 @@ marquee{
 }
 
 #exp h3{
-  color: #3A0519;
+  color: white ;
   text-align: center;
   font-weight: 600;
   font-size: 23px;
@@ -249,12 +286,13 @@ marquee{
 
 #exp p{
   text-align: center;
-  color: #3A0519;
+  color: white;
   line-height: 25px;
   margin-bottom: 30px;
 }
 
 #experience{
+  
   display: flex;
   justify-content: center;
   align-items: center;
@@ -262,22 +300,16 @@ marquee{
 
 #experience div{
   padding: 10px;
+  
 }
 
 #experience div .projects{
   width: 100%;
-  border: 1px solid #3A0519;
+  border: 1px solid rgb(36, 193, 255);
   border-radius: 8px;
-  box-shadow: 10px 10px 24px #977c86;
+  box-shadow: 10px 10px 24px rgba(215, 234, 241, 0.1);
   transition: width 1s, height 1s, transform 1s;
 }
-
-/* #experience div .projects:hover{
-  box-shadow: 10px 10px 24px rgba(70, 62, 221, 0.1);
-  transition: width 1s, height 1s, transform 1s;
-  transform: scale(1.05s);
-  cursor: pointer;
-} */
 
 #experience div .projects img{
   width: 400px;
@@ -286,6 +318,7 @@ marquee{
 }
 
 div .projects h6{
+  color: white;
   margin-top: 20px;
   font-size: 21px;
   font-weight: 700;
@@ -298,15 +331,99 @@ div .projects p{
 }
 
 div .projects .stacks li{
-  font-size: 8px;
+  font-size: 7px;
   display: inline;
   flex-wrap: wrap;
-  border: 1px solid #3A0519;
+  border: 1px solid white;
   border-radius: 4px;
-  background-color: #3A0519;
+  background-color: #232322;
   margin: 0 0 0 0;
   padding: 8px 16px;
   list-style-type: none;
+  color: white;
+}
+
+#contact-details{
+  display: flex;
+  margin-top: 50px;
+}
+
+#contact-details .details{
+  width: 100%;
+
+}
+
+.details h1{
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.details span{
+  color: rgb(36, 193, 255);
+  font-size: 16px;
+}
+
+.details h3{
+  color: white;
+}
+
+.details .adress{
+  line-height: 0;
+
+}
+
+#contact-details .form{
+  width: 100%;
+  display: block;
+
+}
+
+.form input{
+  width: 100%;
+  display: block;
+  margin-top: 8px;
+  padding: 10px;
+  border-top-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border: 1px solid rgb(36, 193, 255);
+  background-color: transparent;
+  color: white;
+}
+
+.form textarea{
+  width: 100%;
+  display: block;
+  margin-top: 8px;
+  padding: 40px;
+  border-top-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  background-color: transparent;
+  border: 1px solid rgb(36, 193, 255);
+  color: white;
+}
+
+.form button{
+  background-color: transparent;
+  border: 1px solid rgb(36, 193, 255);
+  margin-top: 8px;
+  transition: width 2s, height 2s, transform 2s;
+}
+
+.form button:hover{
+  transform: scaleX(1.04);
+}
+
+
+
+.form span{
+  font-size: 24px;
+  color: white;
+  font-weight: 600px;
+}
+
+.form h2{
+  font-size: 22px;
+  font-weight: 600px;
   color: white;
 }
 
@@ -314,6 +431,7 @@ div .projects .stacks li{
 #newsletter{
   background-image: url("images/retrosupply-jLwVAUtLOAQ-unsplash.jpg");
   background-size: cover;
+  opacity: 0.8;
   height: 40vh;
   display: flex;
   justify-content: space-between;
@@ -358,7 +476,7 @@ div .projects .stacks li{
 #newsletter button{
     height: 3.125rem;
     padding: 0 1.25em;
-    background-color: #3A0519;
+    background-color: rgb(36, 193, 255);
     color: white ;
     border: 1px solid white;
     white-space: nowrap;
@@ -382,7 +500,9 @@ div .projects .stacks li{
 }
 
 #section-p .col h1{
-    color: #3A0519;
+    font-size: 30px;
+    font-weight: 700;
+    color: rgb(36, 193, 255);
 }
 
 
@@ -396,29 +516,32 @@ div .projects .stacks li{
 }
 
 .cols p{
-    color: #3A0519;
+    color: white;
     font-size: 13px;
     margin: 0 0 8px 0;
+    line-height: 25px;
 }
 
 .cols a{
     font-size: 13px;
     text-decoration: none;
     margin-bottom: 10px;
-    color: #3A0519;
+    color: white;
 }
 
 .col .install img{
     margin: 10px 0 15px 0;
-    border: 1px solid #3A0519;
+    border: 1px solid rgb(36, 193, 255);
+    margin-right: 10px;
     width: 120px;
     height: 60px;
 }
 
 .copywrite{
+  padding: 20px;
    text-align: center;
    border: 1px solid white;
-   background: #3A0519;
+   background: transparent;
 }
 
 .copywrite p{
@@ -428,32 +551,105 @@ div .projects .stacks li{
 
 /* about us page */
 
-#hero-page{
+#euro{
+  display: flex;
+  flex-direction: column;
+  padding: 30px 20px;
+  line-height: 70px;
+}
+
+.hero-page #euro p{
+  text-align: justify;
+  margin: 0 40px 0 40px;
+  
+}
+
+.hero-page{
   height: auto;
-  background-color: #EF88AD;
+  margin-top: 70px;
+  margin-bottom: 30px;
+  background-color: #232322;
 }
 
-#hero-page h2{  
+.hero-page h2{
+  justify-content: justify;  
   text-align: center;
   color: white;
-  font-size: 28px;
+  font-size: 26px;
+  margin-bottom: 30px;
 }
 
-#hero-page p{
-  text-align: center;
+.hero-page p{
+  text-align: justify;
+  line-height: 40px;
+  justify-content: center;
   color: white;
   font-size: 16px;
   margin-top: 10px;
+  
+
 }
 
-#hero-page ul li{
-  text-align: center;
+.hero-page ul li{
+  font-size: 15px;
   color: white;
-  font-size: 16px;
   margin-top: 10px;
-  list-style-type: none;
 }
 
+.euro{
+  margin-bottom: 100px;
+  margin-left: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.euro .euros{
+  display: flex;
+  margin: 50px 0 50px 0;
+}
+
+.euro .euros .euro1{
+  
+  text-align: justify;
+  justify-content: center;
+  width: 60%;
+  line-height: 30px;
+  margin: 0;
+  padding: 30px 20px 30px 20px;
+  margin-right: 30px;
+}
+
+.euro .euros .euro1 h2{
+  text-align: start;
+  color: rgb(36, 193, 255);
+}
+
+.euro .euros .euro2 h2{
+  text-align: start;
+  color: rgb(36, 193, 255);
+}
+
+.euro .euros .euro2{
+  text-align: justify;
+  justify-content: justify;
+  width: 40%;
+  line-height: 30px;
+  margin: 0;
+  padding: 30px 20px 30px 20px;
+}
+
+
+
+.eu .eu1 strong{
+  color: rgb(36, 193, 255);
+}
+
+.eu .eu1 div{
+ display: inline-flex ;
+ color: white;
+ margin-right: 2px;
+ font-size: 13px;
+}
 
 
 
@@ -471,8 +667,7 @@ div .projects .stacks li{
         right: -300px;
         height: 100vh;
         width: 300px;
-        background-color: #3A0519;
-        box-shadow: 0 40px 60px #EF88AD;
+        background-color: #232322;
         padding: 80px 0 0 10px;
         transition: 0.3s;
     }
@@ -491,10 +686,11 @@ div .projects .stacks li{
         align-items: center;
     }
 
-    #mobile bar{
+    #mobile .bar{
         color: white;
         font-size: 24px;
         padding-left: 20px;
+        margin-left: 30px;
     }
 
     #close{
@@ -502,7 +698,7 @@ div .projects .stacks li{
         position: absolute;
         top: 30px;
         left: 30px;
-        color: #3A0519;
+        color: #232322;
         font-size: 24px;
     }
   #header {
@@ -510,8 +706,7 @@ div .projects .stacks li{
     align-items: center;
     justify-content: space-between;
     padding: 20px 80px;
-    background-color: #3A0519;
-    box-shadow: 0 5px 15px #EF88AD;
+    background-color: #232322;
     z-index: 999;
     position: sticky;
     top: 0;
@@ -519,13 +714,76 @@ div .projects .stacks li{
 }
 
 #hero {
-    background-image: url("images/vackground-com-hDQ-dUjQN8E-unsplash.jpg");
-    height: 70vh;
-    width: 100%;
-    background-size: cover;
-    margin-top: 40px;
+    margin-top: 30px;
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
 }
 
+#hero h2 {
+  margin-top: 40px;
+    font-weight: 600;
+    text-align: justify;
+    font-size: 25px;
+}
+
+#hero p {
+   text-align: justify;
+}
+
+#hero .desc {
+    margin-left: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-content: space-around;
+    justify-content: center;
+    flex-direction: column-reverse;
+}
+
+.desc .photo {
+    border: none;
+    height: auto;
+    width: 30%;
+}
+
+#hero img {
+  margin-top: 50px;
+    justify-content: center;
+    height: auto;
+    width: 100%;
+    align-items: center;
+    margin-left: 40px;
+}
+
+.section-p1 {
+    padding: 20px 40px;
+}
+
+#hero img {
+    height: auto;
+    width: 100%;
+}
+
+#features {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    cursor: pointer;
+    align-content: center;
+}
+
+#exp p {
+    text-align: justify;
+    color: white;
+    margin-left: 90px;
+    margin-right: 90px;
+    line-height: 25px;
+    margin-bottom: 30px;
+}
 
 #features div {
     display: flex;
@@ -538,11 +796,21 @@ div .projects .stacks li{
 #features div .feat {
   margin-bottom: 30px;
     display: inline-block;
-    border: 1px solid #3A0519;
+    border: 1px solid #232322;
     border-radius: 4px;
     padding: 30px 60px 30px 60px;
-    box-shadow: 10px 10px 24px #EF88AD;
     transition: width 1s, height 1s, transform 1s;
+}
+
+.feat .euone button {
+   
+    display: block;
+   margin-bottom: 10px;
+}
+
+#exp {
+    margin-top: 20px;
+    text-align: justify;
 }
 
 #experience {
@@ -560,4 +828,176 @@ div .projects .stacks li{
     justify-content: center;
 }
 
+#section-p .col .cols {
+    display: flex;
+    margin-left: 40px;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    padding: 30px;
+}
+
+}
+
+@media (max-width: 412px) {
+element.style {
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    margin-left: 20px;
+}
+
+#mobile .bar{
+     margin-left: 20px;
+    }
+
+#hero .desc {
+    margin-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-content: space-around;
+    justify-content: center;
+    flex-direction: column-reverse;
+}
+  #hero {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+  #hero button {
+    width: 100%;
+    color: white;
+    
+}
+
+.euro .euros {
+  width: 100%;
+    flex-direction: column;
+    margin-left: 30px;
+    width: 100%;
+}
+
+.euro .euros .euro1 {
+    width: 80%;
+    margin: 0;
+    padding: 0;
+    margin-right: 0;
+}
+
+.euro .euros .euro2 {
+    text-align: justify;
+    justify-content: justify;
+    width: 80%;
+    line-height: 30px;
+    padding: 0;
+}
+
+.hero-page h2 {
+    text-align: center;
+    font-size: 20px;
+}
+
+#features div .feat {
+    display: block;
+    background-color: rgb(36, 193, 255);
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px 10px 20px;
+    margin-left: 0;
+    border: 1px solid white;
+  
+}
+
+#features div .feat img {
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    
+    margin-bottom: 10px;
+}
+
+#features div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 0;
+    align-items: center;
+}
+
+.feat .euone button {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+#exp p {
+    text-align: justify;
+    color: white;
+    margin-left: 40px;
+    margin-right: 40px;
+    line-height: 25px;
+    margin-bottom: 30px;
+}
+
+div .projects .stacks li {
+    font-size: 6px;
+    padding: 6px 12px;
+}
+
+#contact-details{
+  display: block;
+}
+
+#newsletter {
+  background-image: none;
+  background-color: transparent;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+}
+
+#newsletter .form {
+    display: block;
+    width: 100%;
+}
+
+#newsletter input {
+    border: 1px solid white;
+    border-radius: 4px;
+    outline: #232322;
+    border: 1px solid rgb(36, 193, 255);
+    border-bottom-right-radius: 0;
+}
+
+#newsletter button {
+    height: 2.5rem;
+    font-weight: 400px;
+    justify-content: center;
+    align-items: center;
+    color: rgb(36, 193, 255);
+    background-color: transparent;
+    border: 1px solid rgb(36, 193, 255);
+}
+
+#newsletter .newstext h4 {
+    
+    font-size: 18px;
+    font-weight: 500;
+}
+
+#newsletter .newstext p {
+   
+    font-size: 14px;
+    font-weight: 400;
+}
+
+#section-p .col {
+    display: block;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 }

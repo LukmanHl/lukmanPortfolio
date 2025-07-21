@@ -4,71 +4,116 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    
+    <marquee style="background-color: rgb(36, 193, 255); padding: 20px; width: 100%; color: white;">
+            "I don’t just build websites — I build digital experiences that feel effortless to use and impossible to ignore."
+    </marquee>
 
     <section id="header">
-        <h1>lukman</h1>
-        <div>
-            <ul id="navbar">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="ourservices.html">Our Services</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="login.html">Login</a></li>
-                <a href="#" id="close" > <h3 style="color: white; font-size: 35px; font-weight: 600;">X</h3> </a> 
-            </ul>
-        </div>
+        
+        <div class="container">
+           <div class="brand-logo"> <a href="#">lukman<span>ng</span></a> </div>
+                <div>
+                    <ul id="navbar">
+                        <li><a class="active" href="index.html">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#">Our Services</a></li>
+                        <a href="#" id="close" > <h3 style="color: white; font-size: 30px; font-weight: 500;">X</h3> </a> 
+                    </ul>
+                </div>
 
-        <div id="mobile">
-            
-            <a href="cart.html"></a></i>
-            <h3 id="bar" style="color: white; font-size: 35px; font-weight: 500;">|||</h3>
-            <!-- <i id="bar" class="fas fa-outdent"></i> -->
-        </div>
+                <div id="mobile">
+                    
+                    <a href="cart.html"></a></i>
+                    <h3 id="bar" style="color: white; font-size: 35px; font-weight: 500;"> ⇛ </h3>
+                </div>
+            </div>
     </section>
 
     <section id="hero" class="section-p1">
       <div class="desc"> 
             <div class="text">
-                <h2>Hi, I’m Hammed Lukman. I design and build websites that are fast, functional, and reliable.</h2>
+                <marquee style="padding: 8px; color: white; width: 300px;" behavior="" direction="left">Fullstack Developer</marquee>
                 <p>From elegant landing pages to full-blown web applications, I help individuals and businesses stand out online with clean code and thoughtful design.</p>
-                <button class="normal">My Projects</button>
-                <button class="normal">Contact Me</button>
+                <button class="home-links normal">Get In Touch</button>
+                <button class="home-links normal">View CV</button>
             </div>
 
             <div class="photo">
                 <img src="images/IMG_20250619_103606.jpg" alt="">
-                <h4>Fullstack Developer</h4>
             </div>
         </div>
         
     </section>
 
-        <marquee style="background-color: #3A0519; padding: 6px; width: 100%; color: white;">
-            "I don’t just build websites — I build digital experiences that feel effortless to use and impossible to ignore."
-        </marquee>
+    <section id="about" class="hero-page" class="section-p1">
 
-    <section id="features" class="section-p1">
-        <h3>My Services</h3>
-        
-       <div> 
-            <div class="feat">
-                <img src="icons/icons8-website.gif" alt="">
-                <h6>Frontend Development</h6>
+        <div class="euro-page" id="euro">
+          <h2>About</h2>
+    
+          <p>Hi, I’m <strong>Lukman Hammed</strong> a curious, creative, and ever-evolving <strong>Fullstack Developer</strong> with a background in <strong>Computer Science.</strong>My journey into tech started with a love of creating things users can touch and see. I dove headfirst into the front end, mastering the skills to create clean, responsive websites using HTML, CSS, JavaScript, and frameworks like React and Tailwind CSS. As I settled in with the front end, I realized I wanted to do more, build complete systems, work with databases, and really understand what's happening under the hood. That's why I'm currently learning backend development with Python, and also familiarizing myself with frameworks like Django and Flask, and I am loving this!
+          </p>
+      </div>
+
+      <div class="euro">
+        <div class="euros">
+          <div class="euro1">
+            <h2>What I Love Doing:</h2>
+
+            <ul> 
+              <li>Building and developing user-friendly websites and applications</li>
+              <li>Learning new technologies and addressing real-world problems</li>
+              <li>Coding clean, readable code (and making it better along the way)</li>
+              <li>Contributing to projects that actually change people's lives</li>
+            </ul>
+          </div>
+          <div class="euro2">
+
+            <h2>Tools (So Far):</h2>
+            <div class="eu">
+                <ul>
+                    <li>
+                        <div class="eu1">
+                            <strong>Frontend:</strong>
+                            <div>HTML</div>
+                            <div>CSS</div>
+                            <div>JavaScript</div>
+                            <div>React</div>
+
+                        </div>
+                    
+                    </li>
+
+                    <li>
+                    <div>
+                        <div class="eu1">
+                            <strong>Version Control:</strong>
+                            <div>Git</div>
+                    </li>
+
+                    <li>
+                         <div class="eu1">
+                            <strong>Currently Learning:</strong>
+                            <div>Python</div>
+                            <div>Django</div>
+                            <div>Flask</div>
+                        </div>
+                    </li>
+
+                </ul>
             </div>
 
-            <div class="feat">
-                <img src="icons/2.png" alt="">
-                <h6>Backend Development</h6>
-            </div>
+          </div>
+      </div>
 
-            <div class="feat">
-                <img src="icons/star video.gif" alt="">
-                <h6>Fullstack Development</h6>
-            </div>
-        </div>
+      </div>
+
     </section>
 
     <section id="exp"> 
@@ -129,6 +174,50 @@
         </div>
     </section>
 
+        
+    <section id="contact-details" class="section-p1">
+        
+        <div id="contact" class="details">
+            <h1>Contact</h1>
+            <span>GET IN TOUCH</span>
+            <h3>Location</h3>
+            <div class="adress">
+                <li>
+                    <i class="fa fa-map"></i>
+                    <p>1, Holy Child's College Way, Ikoyi, Lagos</p>
+                </li>
+
+                <li>
+                    <i class="fa fa-envelope"></i>
+                    <p>lukhammed.hl@gmail.com</p>
+                </li>
+
+                <li>
+                    <i class="fa fa-phone"></i>
+                    <p>+234-813-354-7669</p>
+                </li>
+
+                <li>
+                    <i class="bi bi-alarm"></i>
+                    <p>Monday - Saturday, 8.00am - 5.00pm</p>
+                </li>
+            </div>
+        </div>
+
+        <div class="form">
+            <form action="">
+                <span>LEAVE A MESSAGE</span>
+                <h2>I will love to hear from you</h2>
+
+                <input type="text" placeholder="Your Name">
+                <input type="text" placeholder="Email">
+                <input type="text" placeholder="Subject">
+                <textarea name="" id="" placeholder="Your message"></textarea>
+                <button class="normal normals">Submit</button>
+            </form>
+        </div>
+    </section>
+
     <section id="newsletter" class="section-p1 section-m1">
         <div class="newstext">
             <h4>Get in touch</h4>
@@ -145,12 +234,9 @@
 
       <footer id="section-p">
     <div class="col">
-          
         <div class="cols follow">
-            <h1>lukman.ng</h1>
-            <br>
+            <h1>lukman.ng</h1>           
             <h4>Contact</h4>
-            <br>
             <p><i><img src="icons/icons8-address-50.png" width="15px" height="15px" style="margin-right: 10px;" alt=""></i><strong>Adress:</strong> Shop b1, Computer Village, Ikeja, Lagos, Nig.</p>
             <p><i><img src="icons/icons8-phone-50.png" width="15px" height="15px" style="margin-right: 10px;" alt=""></i><strong>Tel:</strong> (+234)-816-597-1208 & (+234)-907-630-3067</p>
             <p><i><img src="icons/icons8-clock-50.png" width="15px" height="15px" style="margin-right: 10px;" alt=""></i><strong>Hours:</strong>08:00 - 18:00, Mon - Sat</p>
